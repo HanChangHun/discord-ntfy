@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-ntfy"
+version = "0.1.0"
+description = "Discord Notification"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "Changhun Han", email = "ehwjs1914@naver.com" }]
+keywords = ["discord", "notification", "webhook"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = ["python-dotenv>=0.21.1", "requests>=2.31.0"]
+
+[project.optional-dependencies]
+dev = ["build>=1.1.1", "twine>=4.0.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
