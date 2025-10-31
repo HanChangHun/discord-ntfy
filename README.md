@@ -17,6 +17,8 @@ pip install discord-ntfy
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_WEBHOOK_URL
 ```
 
+or `export DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_WEBHOOK_URL`
+
 3. Use the library:
 
 ```python
